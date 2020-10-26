@@ -381,14 +381,14 @@ footer
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding:0rem 7.056rem 1rem 7.056rem;
+    padding:0rem 3.333rem 1rem 3.333rem;
 }
 
 .condiciones{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width:50%;
+    width:35%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -396,8 +396,8 @@ footer
 
 .condiciones a{
     font-size:0.667rem;
-    color: #FAFAFA;
-    text-decoration: underline;
+    color:#908F8F;
+    /*text-decoration: underline;*/
 }
 
 .linkdn svg{
