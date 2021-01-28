@@ -5,12 +5,9 @@
 * Browsers: last 4 version
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 @font-face {
     font-family: "Druk Wide";
@@ -19,6 +16,9 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+html{
+    box-sizing: border-box;
 }
 
 html,
