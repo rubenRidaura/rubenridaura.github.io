@@ -479,7 +479,12 @@ home
 .intro-text {
     max-width: 80%;
     margin: auto;
-    height: 30vh;
+}
+
+@media screen and (min-width:767px){
+    .intro-text {
+        height: 30vh;
+    }
 }
 
 .h1-contorno {
@@ -594,7 +599,7 @@ listado de proyectos
   
   .title {
     font-size: 1.722rem;
-    margin: 0;
+    margin: 0 auto 1rem;
   }
   
   .date{
