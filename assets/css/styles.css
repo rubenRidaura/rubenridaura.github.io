@@ -495,6 +495,11 @@ home
     -webkit-text-stroke-width: 0; /* ancho del borde */
     -webkit-text-stroke-color: #161614; /* color de borde */
 }
+@media screen and (max-width:360px){
+    .presentation-scroll{
+        display: none;
+    }
+}
 
 .presentation-scroll{
     bottom: 1.6rem;
@@ -603,7 +608,7 @@ listado de proyectos
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 617px;
+    width: 100%;
     z-index: 0;
   }
 
@@ -639,8 +644,11 @@ listado de proyectos
       }
       
   }
-
-  
+  @media screen and (min-width: 617px) {
+    .image {
+        width: 617px;
+    }
+  }
   @media screen and (min-width: 800px) {
     .content {
       position: initial;
