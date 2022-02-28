@@ -953,12 +953,12 @@ Case Study
 .segundafoto-case{
     margin: auto;
     background-color: rgba(22, 22, 20, 1);
-    padding: 1rem 0 1rem 0;
+    padding: 3rem 0 3rem 0;
     
 }
 
 .phone{
-    margin:5rem;
+    margin:3rem 0;
 }
 
 .phone img{
