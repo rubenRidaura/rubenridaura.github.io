@@ -598,6 +598,7 @@ listado de proyectos
   }
   
   .title {
+    display: block;
     font-family: "Druk Wide", Helvetica, sans-serif;
     font-size: 1.722rem;
     margin: 0 auto 1rem;
