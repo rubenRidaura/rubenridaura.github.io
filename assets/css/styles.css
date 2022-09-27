@@ -598,12 +598,16 @@ listado de proyectos
   }
   
   .title {
+    font-family: "Druk Wide", Helvetica, sans-serif;
     font-size: 1.722rem;
     margin: 0 auto 1rem;
+    text-align: center;
   }
   
-  .date{
+  .description{
     font-size: 0.8rem;
+    text-align: center;
+    display: block;
   }
 
   .image {
@@ -636,17 +640,21 @@ listado de proyectos
   }
   
   .content {
-    font-family: "Druk Wide", Helvetica, sans-serif;
     color: white;
-    position: relative;
+   /* position: relative;*/
     z-index: 1;
-    text-align: center;
+    width: 80%;    
+     
   }
 
   @media screen and (min-width: 1080px) {
     .title {
         font-size: 3.333rem;
+        text-align: left;
       }
+    .description{
+        text-align: left;
+    }
       
   }
   @media screen and (min-width: 617px) {
@@ -654,18 +662,19 @@ listado de proyectos
         width: 617px;
     }
   }
-  @media screen and (min-width: 800px) {
-    .content {
-      position: initial;
-    }
+
+
   
+  @media screen and (max-width: 42.611rem) {
+    .content{
+        width: 80%;
+    }
+
+  
+  /*
     .title,
-    .date {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
+     .description {
+      justify-content: left;
     }
 
     .vermas{
@@ -682,9 +691,9 @@ listado de proyectos
       left: 9rem;
     }
   
-    .date {
+    .description {
       right: 9rem;
-    }
+    }*/
   }
   
 
@@ -1127,5 +1136,3 @@ Case Study
         font-size:1rem;
     }
 }
-
-
