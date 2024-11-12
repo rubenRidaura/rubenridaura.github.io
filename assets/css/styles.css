@@ -1,44 +1,69 @@
 :root{
     --negro: #1A1A1A;
     --blanco: #ffffff;
-    --gris: #E1E1E1;
+    --gris: #DFDFDF;
     --verde: #B9F616;
 }
 
 * {
     box-sizing: border-box;
-    min-width: 0;
     position: relative;
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
+    min-width: 0;
+  }
+  
+  body {
+    min-height: 100dvh;
+  }
+  
+  h1, h2, h3, h4, p {
+    text-wrap: pretty;
+  }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src:url(../fonts/PPNeueMontreal-Book.otf);
+    font-family: 'PP Neue Montreal';
+    src: url(../fonts/PPNeueMontreal-Book.woff2) format('woff2'),
+        url(../fonts/PPNeueMontreal-Book.woff) format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src:url(../fonts/PPNeueMontreal-Medium.otf);
-    font-weight: medium;
-    font-style: medium;
+    font-family: 'PP Neue Montreal';
+    src: url(../fonts/PPNeueMontreal-Italic.woff2) format('woff2'),
+        url(../fonts/PPNeueMontreal-Italic.woff) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Neue Montreal';
-    src:url(../fonts/PPNeueMontreal-Bold.otf);
+    font-family: 'PP Neue Montreal';
+    src: url(../fonts/PPNeueMontreal-Medium.woff2) format('woff2'),
+        url(../fonts/PPNeueMontreal-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url(../fonts/PPNeueMontreal-Bold.woff2) format('woff2'),
+        url(../fonts/PPNeueMontreal-Bold.woff) format('woff');
     font-weight: bold;
-    font-style: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+/*
+
+General
+
+*/
 
 html,
 body {
-    font-family: 'Neue Montreal',"arial", sans-serif;
+    font-family: 'PP Neue Montreal',"arial", sans-serif;
     background-color: var(--negro);
     min-height: 100dvh;
 }
@@ -52,38 +77,30 @@ body{
 }
 
 h1, h2, h3, h4 {
-    text-wrap: balance;
     color: var(--blanco);
 }
 
 p {
-    text-wrap: pretty;
     color: var(--gris);
-}
-
-nav {
-    max-width: 1200px;
-
-}
-
-h1 {
-    font-size: 3.8rem;
-    font-family: 'Neue Montreal';
+    font-family: 'PP Neue Montreal',"arial", sans-serif;
     font-weight: normal;
+    font-size: 1.9rem;
 }
 
 a{
     color: var(--verde);
-}
-
-button{
-    color: var(--verde);
+    text-decoration: none;
 }
 
 .contenedor{
-    margin: 0 auto 0 auto;
-    width: 1200px;
+    margin: 2.4rem;
 }
+
+/*
+
+Nav
+
+*/
 
 .nav-principal{
     display: flex;
@@ -97,17 +114,68 @@ button{
 
 }
 
-.textos{
-    display: flex;
+.nav-principal p{
+    margin: 0;
+    font-weight: 500;
+}
+
+/*
+
+Title
+
+*/
+
+h1 {
+    font-size: 3.8rem;
+    font-family: 'PP Neue Montreal';
+    font-weight: normal;
+    text-transform: uppercase;
+}
+h1 span{
+    font-weight: 500;
+
+}
+
+/*
+
+Textos
+
+*/
+
+@media (min-width: 768px){
+    .textos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 4rem;
+    }
 }
 
 .textos p{
     font-size: 1.9rem;
     font-weight: normal;
+    width: 100%;
 }
 
-.enlaces{
-    display: flex;
+.textos p span{
+    font-weight: 500;
+}
+
+.textos .nombre{
+    font-style: italic;
+}
+
+/*
+
+Enlaces
+
+*/
+
+@media (min-width: 768px){
+    .enlaces{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 4rem;
+    }
 }
 
 .enlaces h3{
@@ -115,10 +183,29 @@ button{
     font-weight: bold;
 }
 
-button{
-    font-size: 1.9rem;
-    background-color: rgba(0 0 0 0 0);
+.enlaces div{
+    width: 100%;
+}
 
+.button{
+    font-size: 1.9rem;
+    font-family: 'PP Neue Montreal',"arial", sans-serif;
+    letter-spacing: -1px;
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-radius: 99rem;
+    border: 0.1rem solid var(--verde);
+    margin-right: 1.6rem;
+}
+
+/*
+
+Footer
+
+*/
+.footer{
+    margin-top: 40px;
 }
 
 .footer a{
