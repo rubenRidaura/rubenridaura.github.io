@@ -146,7 +146,7 @@ Title
 
 h1 {
     font-size: 3.05rem;
-    font-family: 'PP Neue Montreal';
+    font-family: 'PP Neue Montreal',"arial", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
 }
