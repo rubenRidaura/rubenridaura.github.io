@@ -6,17 +6,17 @@
 }
 
 html{
-    cursor: url(../img/Cursor.svg),
+    cursor: url(../img/cursor.svg),
     auto;
 }
 
 a:hover{
-    cursor: url(../img/Hover.svg),
+    cursor: url(../img/hover.svg),
     auto;
 }
 
 .button:hover{
-    cursor: url(../img/Hover.svg),
+    cursor: url(../img/hover.svg),
     auto;
 }
 
@@ -265,7 +265,12 @@ Footer
     border-top: 0.05rem solid var(--gris);
 }
 
-.footer a{
+.condiciones{
+    display: flex;
+    flex-direction: row;
+}
+.footer a, .footer p{
     font-size: 1.56rem;
     color: var(--blanco);
+    margin-right: 0.8rem;
 }
