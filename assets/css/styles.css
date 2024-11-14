@@ -265,10 +265,13 @@ Footer
     border-top: 0.05rem solid var(--gris);
 }
 
-.condiciones{
-    display: flex;
-    flex-direction: row;
+@media (min-width: 768px){
+    .condiciones{
+        display: flex;
+        flex-direction: row;
+    }
 }
+
 .footer a, .footer p{
     font-size: 1.56rem;
     color: var(--blanco);
