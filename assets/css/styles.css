@@ -5,14 +5,17 @@
     --verde: #B9F616;
 }
 
-html{
+body{
     cursor: url(../img/cursor.svg),
     auto;
 }
 
+a {
+    cursor: url(../img/hover.svg) 0 0, pointer;
+  }
+
 a:hover{
-    cursor: url(../img/hover.svg),
-    auto;
+    cursor: url(../img/hover.svg) 0 0, pointer;
 }
 
 .button:hover{
